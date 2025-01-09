@@ -150,10 +150,7 @@ fun Cubages (
                             it[0].toString().toInt(),
                             it[1].toString(),
                             it[2].toString().toInt(),
-                            it[3].toString(),
-                            accesInfo = {
-                                navController.navigate("infoMartelage")
-                            }
+                            it[3].toString()
                         )
                         Spacer(
                             Modifier.padding(bottom = 5.dp)

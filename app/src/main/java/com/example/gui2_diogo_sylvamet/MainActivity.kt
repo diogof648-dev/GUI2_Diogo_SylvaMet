@@ -87,7 +87,7 @@ class MainActivity : ComponentActivity() {
 
                                     FloatingActionButton(
                                         onClick = { },
-                                        containerColor = Color(200, 200, 50)
+                                        containerColor = MaterialTheme.colorScheme.secondary
                                     ) {
                                         Icon(Icons.Rounded.Edit, "edit", tint = Color.White)
                                     }

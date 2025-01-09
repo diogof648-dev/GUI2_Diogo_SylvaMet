@@ -5,6 +5,8 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.List
+import androidx.compose.material.icons.filled.List
 import androidx.compose.material.icons.rounded.Home
 import androidx.compose.material.icons.rounded.Place
 import androidx.compose.material.icons.rounded.Settings
@@ -47,10 +49,10 @@ fun NavBar(
 
             IconButton(
                 onClick = {
-                    navController.navigate("home")
+                    navController.navigate("infoMartelage")
                 }
             ) {
-                Icon(Icons.Rounded.Settings, "Settings", Modifier.size(32.dp))
+                Icon(Icons.AutoMirrored.Filled.List, "Info Martelage", Modifier.size(32.dp))
             }
         }
     }

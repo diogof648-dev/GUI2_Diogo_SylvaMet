@@ -34,8 +34,7 @@ fun CubageItem (
     type: Int,
     name: String,
     number: Int,
-    date: String,
-    accesInfo: () -> Unit
+    date: String
 ) {
     val image = if (type == 1) painterResource(R.drawable.type_1) else painterResource(R.drawable.type_2)
 
@@ -44,7 +43,6 @@ fun CubageItem (
             .fillMaxWidth()
             .background(Color.White)
             .border(1.dp, MaterialTheme.colorScheme.primary, shape = RoundedCornerShape(15.dp))
-            .clickable { accesInfo() }
     ) {
         Row (
             modifier = Modifier
@@ -92,5 +90,5 @@ fun CubageItem (
 @Preview
 @Composable
 fun CubageItemPreview() {
-    CubageItem(1, "Blabla", 123, "12.03.2024", { })
+    CubageItem(1, "Blabla", 123, "12.03.2024")
 }
